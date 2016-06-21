@@ -1,0 +1,1 @@
+# magento_slovenian_translation
