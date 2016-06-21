@@ -1,0 +1,42 @@
+﻿<!--@subject Dobrodošli {{var customer.name}}! @-->
+
+<style type="text/css">
+body,td { color:#2f2f2f; font:11px/1.35em Verdana, Arial, Helvetica, sans-serif; }
+</style>
+
+<div style="font:11px/1.35em Verdana, Arial, Helvetica, sans-serif;">
+    <table cellspacing="0" cellpadding="0" border="0" width="98%" style="margin-top:10px; font:11px/1.35em Verdana, Arial, Helvetica, sans-serif; margin-bottom:10px;">
+        <tr>
+            <td align="center" valign="top">
+                <!-- [ header starts here] -->
+                <table cellspacing="0" cellpadding="0" border="0" width="650">
+                    <tr>
+                        <td valign="top">
+                            <a href="{{store url=""}}"><img src="{{skin url="images/logo_trgovina.jpg" _area='frontend'}}" alt="{{var store.getFrontendName()}}" style="margin-bottom:10px;" border="0"/></a></td>
+                    </tr>
+                </table>
+
+                <!-- [ middle starts here] -->
+                <table cellspacing="0" cellpadding="0" border="0" width="650">
+                    <tr>
+                        <td valign="top">
+                            <p><strong>Spo&scaron;tovani {{htmlescape var=$customer.name}}</strong>,<br/>
+Pozdravljeni v na&scaron;i spletni trgovini. &#268;e se &#382;elite prijaviti v sistem med ogledom trgovine kliknite <a href="{{store url="customer="customer"/account/"}}" style="color:#1E7EC8;">Prijava</a> ali <a href="{{store url="customer="customer"/account/"}}" style="color:#1E7EC8;">Moj ra&#269;un</a> in vpi&scaron;ite va&scaron; e-naslov ter geslo. </p>
+<p>Ko boste prijavljeni v sistem boste lahko:</p>
+                            <ul>
+                              <li>Hitreje opravili nakup</li>
+                              <li> Preverili stanje va&scaron;ih naro&#269;il</li>
+                              <li>Pregledali pretekla naro&#269;ila</li>
+                              <li>Spremenili va&scaron;e podatke</li>
+                              <li>Spremenili va&scaron;e geslo</li>
+                              <li>Vpisali razli&#269;ne naslove za po&scaron;iljanje (npr. za po&scaron;iljanje daril prijateljem)</li>
+                            </ul>
+                          <p>&nbsp;</p>
+                        <p>Hvala za prijavo!</p></td>
+                    </tr>
+                </table>
+
+            </td>
+        </tr>
+    </table>
+</div>

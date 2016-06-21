@@ -1,0 +1,58 @@
+﻿{* This is a comment block
+
+Use vars: {{var var_name}}
+*}<!--@subject Opomnik: Plačilo je bilo neuspešno @-->
+
+<table>
+    <thead>
+        <tr>
+            <th>Pri transakciji plačila je prišlo do napake.</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+                <p>
+                    <b>Razlog</b>:<br />
+                    {{var reason}}
+                </p>
+                <p>
+                    <b>Tip</b>:<br />
+                    {{var checkoutType}}
+                </p>
+                <p>
+                    <b>Stranka:</b><br />
+                    <a href="mailto:{{var customerEmail}}">{{var customer}}</a> &lt;{{var customerEmail}}&gt;
+                </p>
+                <p>
+                    <b>Izdelki:</b><br />
+                    {{var items}}
+                </p>
+                <p>
+                    <b>Skupaj:</b><br />
+                    {{var total}}
+                </p>
+                <p>
+                    <b>Pla&#269;nik:</b><br />
+                    {{var billingAddress.format('html')}}
+                </p>
+                <p>
+                    <b>Prejemnik:</b><br />
+                    {{var shippingAddress.format('html')}}
+                </p>
+                <p>
+                <b>Na&#269;in dostave:</b><br />
+                    {{var shippingMethod}}
+                </p>
+  <p>
+          <b>Na&#269;in pla&#269;ila:</b><br />
+                    {{var paymentMethod}}
+                </p>
+          <p>
+            <b>Datum in &#269;as:</b><br />
+                    {{var dateAndTime}}
+                </p>
+          </td>
+        </tr>
+    </tbody>
+</table>

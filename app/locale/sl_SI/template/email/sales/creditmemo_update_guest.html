@@ -1,0 +1,33 @@
+<!--@subject {{var order.getStoreGroupName()}}: Posodobitev dobropisa # {{var creditmemo.increment_id}} @-->
+<style type="text/css">body,td { color:#2f2f2f; font:11px/1.35em Verdana, Arial, Helvetica, sans-serif; }</style>
+<div style="font:11px/1.35em Verdana, Arial, Helvetica, sans-serif;">
+<table cellspacing="0" cellpadding="0" border="0" width="98%" style="margin-top:10px; font:11px/1.35em Verdana, Arial, Helvetica, sans-serif; margin-bottom:10px;">
+<tr>
+    <td align="center" valign="top">
+        <!-- [ header starts here] -->
+        <table cellspacing="0" cellpadding="0" border="0" width="650">
+        <tr>
+            <td valign="top"><a href="{{store url=""}}"><img src="{{skin url="images/logo_trgovina.jpg" _area='frontend'}}" alt="{{var store.getFrontendName()}}" style="margin-bottom:10px;" border="0"/></a></td>
+        </tr>
+        </table>
+
+        <!-- [ middle starts here] -->
+        <table cellspacing="0" cellpadding="0" border="0" width="650">
+        <tr>
+            <td valign="top">
+                <p>
+                    <strong>Spo&scaron;tovani {{htmlescape var=$billing.getName()}}</strong>,<br/>
+                    Va&scaron;e naro&#269;ilo # {{var order.increment_id}} je bilo<br/>
+                    <strong>{{var order.getStatusLabel()}}</strong>.
+                </p>
+                <p>{{var comment}}</p>
+                <p>Za kakr&scaron;nakoli vpra&scaron;anja o va&scaron;em naro&#269;ilu nas pokli&#269;ite ali nam po&scaron;ljite e-mail.</p>
+              <p>Hvala za zaupanje,<br/>
+              <strong>{{var order.getStoreGroupName()}}</strong></p>
+            </td>
+        </tr>
+        </table>
+    </td>
+</tr>
+</table>
+</div>
